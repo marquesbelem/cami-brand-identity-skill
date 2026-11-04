@@ -49,3 +49,34 @@ Este projeto demonstra a habilidade prática de transformar brandbooks e diretri
 
 - **Parametrização de Design:** Arquitetura flexível baseada em sub-temas visuais atrelados aos objetivos pedagógicos e públicos de cada engine (Unity, Roblox, Scratch).
 - **Consistência de Tom:** Alinhamento algorítmico de tom de voz para manter a comunicação técnica, corporativa e pedagogicamente acessível.
+
+
+## Como usar em algum projeto
+
+### Opção 1: Adicionar como Submódulo Git (Mais recomendado)
+   1. Se o seu projeto já for versionado com Git, você pode linkar o repositório da skill mantendo as atualizações sincronizadas.
+   2. Abra o terminal na pasta raiz do seu projeto e execute:
+   ```text 
+      # Adiciona a skill como submódulo dentro da pasta local de skills
+      git submodule add https://github.com/marquesbelem/cami-brand-identity-skill.git .agent/skills/cami-brand-identity
+   ```
+
+### Opção 2: Clonar ou Copiar Diretamente na Raiz do Projeto
+   1. Se não quiser usar submódulos, basta clonar ou copiar os arquivos diretamente para dentro da pasta `.agent/skills/` ou `.agents/skills/` do projeto:
+   ```text
+      # Na raiz do seu projeto:
+      mkdir -p .agent/skills
+
+      # Clona o repositório localmente
+      git clone https://github.com/marquesbelem/cami-brand-identity-skill.git .agent/skills/cami-brand-identity
+   ```
+
+### Ativação no Workspace Local
+   Para que o agente acione as diretrizes automaticamente sem que você precise digitar instruções repetitivas em toda mensagem, crie ou edite o arquivo de regras locais do projeto:
+
+   Na raiz do seu projeto, abra ou crie o arquivo `.agent/rules` (ou .rules).
+   Adicione a referência da skill:
+   ```text
+    Sempre que solicitado o desenvolvimento de interfaces, landing pages, componentes ou peças visuais para a marca "Camis GameDev", utilize as diretrizes e tokens definidos na skill:
+   `.agent/skills/cami-brand-identity/SKILL.md`
+   ```
