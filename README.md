@@ -32,7 +32,7 @@ O motor interpreta e aplica regras de layout com base em três trilhas de desenv
 ## 🛠️ Como Utilizar no seu Fluxo de Trabalho
 
 ### 1. Ativação via LLMs (Claude Projects / Custom GPTs / Instruções do Sistema)
-1. Copie o conteúdo integral de `identity-skill-prompt.md`.
+1. Copie o conteúdo integral de `SKILL.md`.
 2. Cole nas **Instruções de Sistema**, **Instruções Personalizadas** ou no **Contexto de Projeto** da sua IA.
 3. Para solicitar a criação de elementos visuais ou textuais, especifique a trilha desejada:
    > *"Gere a seção Hero de uma nova landing page usando a configuração do sub-tema **Unity 3D (Dark Blue)**."*
