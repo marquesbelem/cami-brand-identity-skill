@@ -29,20 +29,6 @@ O motor interpreta e aplica regras de layout com base em três trilhas de desenv
 
 ---
 
-## 🛠️ Como Utilizar no seu Fluxo de Trabalho
-
-### 1. Ativação via LLMs (Claude Projects / Custom GPTs / Instruções do Sistema)
-1. Copie o conteúdo integral de `SKILL.md`.
-2. Cole nas **Instruções de Sistema**, **Instruções Personalizadas** ou no **Contexto de Projeto** da sua IA.
-3. Para solicitar a criação de elementos visuais ou textuais, especifique a trilha desejada:
-   > *"Gere a seção Hero de uma nova landing page usando a configuração do sub-tema **Unity 3D (Dark Blue)**."*
-
-### 2. Implementação em Código (React / Next.js / Tailwind CSS)
-A skill pode exportar paletas e componentes diretamente no padrão Tailwind ou React.
-   > *"Gere o componente de botão no padrão da marca para o **Tema Scratch (Orange)** usando Tailwind CSS."*
-
----
-
 ## 📈 Valor para o Portfólio (Design Tokens & Prompt Engineering)
 
 Este projeto demonstra a habilidade prática de transformar brandbooks e diretrizes de design abstratas em infraestrutura executável por IA:
@@ -50,8 +36,9 @@ Este projeto demonstra a habilidade prática de transformar brandbooks e diretri
 - **Parametrização de Design:** Arquitetura flexível baseada em sub-temas visuais atrelados aos objetivos pedagógicos e públicos de cada engine (Unity, Roblox, Scratch).
 - **Consistência de Tom:** Alinhamento algorítmico de tom de voz para manter a comunicação técnica, corporativa e pedagogicamente acessível.
 
+---
 
-## Como usar em algum projeto
+## 🛠️ Como Utilizar no seu Fluxo de Trabalho
 
 ### Opção 1: Adicionar como Submódulo Git (Mais recomendado)
    1. Se o seu projeto já for versionado com Git, você pode linkar o repositório da skill mantendo as atualizações sincronizadas.
@@ -71,7 +58,7 @@ Este projeto demonstra a habilidade prática de transformar brandbooks e diretri
       git clone https://github.com/marquesbelem/cami-brand-identity-skill.git .agent/skills/cami-brand-identity
    ```
 
-### Ativação no Workspace Local
+### 1. Ativação no Workspace Local
    Para que o agente acione as diretrizes automaticamente sem que você precise digitar instruções repetitivas em toda mensagem, crie ou edite o arquivo de regras locais do projeto:
 
    Na raiz do seu projeto, abra ou crie o arquivo `.agent/rules` (ou .rules).
@@ -80,3 +67,12 @@ Este projeto demonstra a habilidade prática de transformar brandbooks e diretri
     Sempre que solicitado o desenvolvimento de interfaces, landing pages, componentes ou peças visuais para a marca "Camis GameDev", utilize as diretrizes e tokens definidos na skill:
    `.agent/skills/cami-brand-identity/SKILL.md`
    ```
+
+   
+### 2. Ativação via LLMs (Claude Projects / Custom GPTs / Instruções do Sistema)
+Para solicitar a criação de elementos visuais ou textuais, especifique a trilha desejada:
+   > *"Gere a seção Hero de uma nova landing page usando a configuração do sub-tema **Unity 3D (Dark Blue)**."*
+
+### 3. Implementação em Código (React / Next.js / Tailwind CSS)
+A skill pode exportar paletas e componentes diretamente no padrão Tailwind ou React.
+   > *"Gere o componente de botão no padrão da marca para o **Tema Scratch (Orange)** usando Tailwind CSS."*
